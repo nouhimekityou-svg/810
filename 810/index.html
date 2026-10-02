@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スロットマシン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="sound1" preload="auto">
+        <source src="./sound/nc116455_やりますねぇ！.wav" type="audio/wav">
+    </audio>
+    <audio id="sound2" preload="auto">
+        <source src="./sound/nc51910_ンアッー！.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound3" preload="auto">
+        <source src="./sound/nc108396_こ↑こ↓.wav" type="audio/wav">
+    </audio>
+    <audio id="sound4" preload="auto">
+        <source src="./sound/nc150847_イキスギィ！.wav" type="audio/wav">
+    </audio>
+    
+    <div class="container">
+        <h1>スロットマシン</h1>
+        <div class="slot-container">
+            <div>
+                <div id="slot1" class="slot"><img src="1.jpg" id="img1"></div>
+                <button id="stopButton1" class="stopButton">ストップ</button>
+            </div>
+            <div>
+                <div id="slot2" class="slot"><img src="2.png" id="img2"></div>
+                <button id="stopButton2" class="stopButton">ストップ</button>
+            </div>
+            <div>
+                <div id="slot3" class="slot"><img src="3.jpg" id="img3"></div>
+                <button id="stopButton3" class="stopButton">ストップ</button>
+            </div>
+        </div>
+        <div class="control">
+            <button id="startButton" class="startButton">スタート</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="slot.js"></script>
+</body>
+</html>
